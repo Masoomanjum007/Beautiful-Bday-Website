@@ -151,8 +151,17 @@ export default function App() {
                 <div className="cake-tier tier-bottom"><div className="tier-deco"></div></div>
                 <div className="cake-plate"></div>
               </div>
+
+              {/* ADDED: Floating Birthday Text right under the cake */}
+              <div className="birthday-float-text">
+                Happy Birthday, Mansha! 🎂✨💖
+                <p style={{ fontSize: '1.2rem', marginTop: '10px', color: '#fff', opacity: 0.8 }}>
+                  May your year be as bright as you are! 🌟
+                </p>
+              </div>
             </div>
           </section>
+
           <section id="messageScene" className="scene active" style={{ opacity: 1, pointerEvents: 'auto' }}>
              <div className="scroll-parchment" ref={parchmentRef} style={{ opacity: 0, transform: 'scaleY(0)' }}>
                <div className="scroll-edge scroll-edge-top"></div>
@@ -160,7 +169,13 @@ export default function App() {
                <div className="scroll-edge scroll-edge-bottom"></div>
              </div>
           </section>
-          <footer id="footer" className="scene active" style={{ opacity: 1 }}><p className="footer-text">Made with Love ❤️</p></footer>
+
+          {/* UPDATED: Custom Footer Phrase */}
+          <footer id="footer" className="scene active" style={{ opacity: 1, padding: '40px 0' }}>
+            <p className="footer-phrase">
+              To the one who makes life beautiful — Happy Birthday, Mansha.
+            </p>
+          </footer>
         </div>
       )}
     </div>

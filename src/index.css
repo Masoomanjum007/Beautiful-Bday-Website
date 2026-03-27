@@ -711,3 +711,28 @@ body {
    UTILITY
    ================================================================ */
 .hidden { opacity: 0; pointer-events: none; }
+/* Floating Animation for the Birthday Text */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.birthday-float-text {
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Dancing Script', cursive; /* Agar font available na ho toh koi bhi cursive chalega */
+  color: #ff4d94; /* Neon Pink to match your site */
+  text-shadow: 0 0 10px rgba(255, 77, 148, 0.5);
+  animation: float 3s ease-in-out infinite;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.footer-phrase {
+  font-style: italic;
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  margin-top: 50px;
+  opacity: 0.8;
+}
